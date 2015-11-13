@@ -1,0 +1,13 @@
+{
+  "name": "saving-nemo-server",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "sqlite3": "2.0.18",
+    "socket.io": "1.0.6",
+    "dblite": "0.4.1",
+    "mysql": "2.4.1"
+  }
+}
