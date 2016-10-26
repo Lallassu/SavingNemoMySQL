@@ -10,7 +10,7 @@
 //======================================================
 var os = require('os');
 var version = "0.1";
-var port = process.env.PORT || 8082;
+var port = process.env.PORT || 8080;
 
 //======================================================
 // Initialization
