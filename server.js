@@ -208,7 +208,7 @@ function Handler(req, res)
     fs.exists(file, function(exists) {
         if(exists) {
             fs.readFile(file,function(err,data) {
-                res.writeHead(200, {'Content-Type': contentType});
+                res.writeHead(200, {'Content-Type': contentType, 'Access-Control-Allow-Origin': "*"});
                 res.end(data);
             });
         } else {
