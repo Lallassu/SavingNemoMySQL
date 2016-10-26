@@ -59,11 +59,12 @@ logger.log("Started server on port "+port);
 function DBConnect() {
     var connurl = process.env.MYSQL_URI;
     if(connurl == undefined) {
+        console.log(process.env);
         connection = mysql.createConnection({
-            host: 'localhost',
-            user: 'root',
-            password: 'mypassword',
-            database: 'nemo'
+            host: process.env.MYSQL_SERVICE_HOST,
+            user: process.env.MYSQL_USER,
+            password: process.env.MYSQL_PASSWORD,
+            database: process.env.MYSQL_DATABASE
         });
     } else {
         connection = mysql.createConnection(connurl);
