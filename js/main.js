@@ -206,39 +206,39 @@ function Game() {
         this.soundLoader = new SoundLoader();
 
         this.modelLoader.AddJSON({ subDivides: 0,
-                                 obj: 'http://cdn.qake.se/models/models/boat/boat5.js',
+                                 obj: 'http://cdn.qake.se/models/boat/boat5.js',
                                  name: "boat" 
         });
 
         this.modelLoader.AddMorph({ subDivides: 2,
-                                  obj: 'http://cdn.qake.se/models/models/fishes/fish_a.js',
+                                  obj: 'http://cdn.qake.se/models/fishes/fish_a.js',
                                   name: "fish1" 
         });
         this.modelLoader.AddMorph({ subDivides: 2,
-                                  obj: 'http://cdn.qake.se/models/models/fishes/fish_b.js',
+                                  obj: 'http://cdn.qake.se/models/fishes/fish_b.js',
                                   name: "fish2" 
         });
         this.modelLoader.AddMorph({ subDivides: 2,
-                                  obj: 'http://cdn.qake.se/models/models/fishes/fish_c.js',
+                                  obj: 'http://cdn.qake.se/models/fishes/fish_c.js',
                                   name: "fish3" 
         });
         this.modelLoader.AddMorph({ subDivides: 2,
-                                  obj: 'http://cdn.qake.se/models/models/fishes/fish_d.js',
+                                  obj: 'http://cdn.qake.se/models/fishes/fish_d.js',
                                   name: "fish4"
         });
 
 
         // Add sounds
-        this.soundLoader.Add({file: "http://cdn.qake.se/sounds/sounds/burst.mp3",
+        this.soundLoader.Add({file: "http://cdn.qake.se/sounds/burst.mp3",
                              name: "burst"
         });
-        this.soundLoader.Add({file: "http://cdn.qake.se/sounds/sounds/shot2.mp3",
+        this.soundLoader.Add({file: "http://cdn.qake.se/sounds/shot2.mp3",
                              name: "shoot"
         });
-        this.soundLoader.Add({file: "http://cdn.qake.se/sounds/sounds/gameover.wav",
+        this.soundLoader.Add({file: "http://cdn.qake.se/sounds/gameover.wav",
                              name: "end"
         });
-        this.soundLoader.Add({file: "http://cdn.qake.se/sounds/sounds/countdown.mp3",
+        this.soundLoader.Add({file: "http://cdn.qake.se/sounds/countdown.mp3",
                              name: "countdown"
         });
 
